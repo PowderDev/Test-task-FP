@@ -1,0 +1,31 @@
+.root {
+  margin: auto;
+  max-width: 100%;
+  outline: none;
+  overflow-y: auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(7px);
+  display: flex;
+  flex-direction: column;
+  padding: 8px 24px;
+  animation: opacity-animation 200ms ease-in-out;
+}
+
+@keyframes opacity-animation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

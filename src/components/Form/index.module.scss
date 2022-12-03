@@ -1,0 +1,32 @@
+.root {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+
+  & > * + * {
+    margin-left: 8px;
+  }
+}
+
+.submit {
+  width: 150px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #38a3a5;
+  border-radius: 10px;
+  color: white;
+
+  &:active {
+    transform: scale(0.97);
+  }
+}
+
+.textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #8d99ae;
+  padding: 6px 10px;
+}
